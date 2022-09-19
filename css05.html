@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>css - 스타일 속성</title>
+    <style>
+        .box {width:100px; height: 100px; line-height: 100px; text-align: center; float: left; margin: 15px;}
+
+
+        #box1 { background-color: gold;}
+        #box2 { background-color: #ff6600;}
+        #box3 {background-color: #c30;}
+        #box4 {background-color: rgb(255,10,5);}
+        #box5 {background-color: rgb(255,10,5,0.7);}
+        #box6 {background-color: rgb(255,10,5); opacity:;}
+        #box7 {background-color: hsl(60,89%, 40%);}
+        #box8 {background-color: hsla(60, 89, 40, 0.3);}
+        #box9 {background-color: transparent;}
+        #box10 {background-color: inherit;}
+
+        .bgi {width: 100px;, min-height: 100vh; mmargin:0; clear:both;
+        border:3px solidcolor #333; background-image: url("dog.png"), url(.jpg); }
+
+        #bgi1 {background-size: 300px 200px,cover;
+        background-repeat: no-repeat; background-position: center bottom;}
+        #bgi2 { background-position: 400px 300px, 1200px 900px;}
+        #bgi4 {background-size: 400px 300px; auto;}
+        #bgi7 {background-clip: content-box; background-origin: padding-box;}
+        #bgi8 {background-blend-mode: lighten; }
+        /*background-image:url("파일경로및이름") *-배경 이미지 지정/
+        /*background-image:none; -배경 이미지 업슴 */
+        /*background-size: px|%|cover(너비에맞게)|contain(높이에맞게) 
+        단위로 ->가로크기 세로크기 - 배경이미지 크기*/
+        /*background-position : px|%|키워드:ex:lefttop 단위 -> 가로위치 세로위치*/
+        /*가로위치 키워드 left | center | right, 세로위치 키워드 top | center | bottom
+        /*background-repeat : repeat | no-reapet | repeat-x | repeat-y* -배경반복/
+        /*background-attachment : scroll | fixed -배경화면에 고정 또는 스크롤*/
+        /*background-clip: border-box | padding-box | content-box
+             배경 이미지를 어디까지 채울지 */
+        /*background-origin : border-box | padding-box | content-box
+            배경 이미지를 어디부터 시작위치*/
+        /*backgroun-blen-mode : 이미지 합성*/
+
+        
+        
+            </style>
+</head>
+<body>
+    <div class="page" id="page1">
+        <div class="box" id="box1">박스1</div>
+        <div class="box" id="box2">박스2</div>
+        <div class="box" id="box3">박스3</div>
+        <div class="box" id="box4">박스4</div>
+        <div class="box" id="box5">박스5</div>
+        <div class="box" id="box6">박스6</div>
+        <div class="box" id="box7">박스7</div>
+        <div class="box" id="box8">박스8</div>
+        <div class="box" id="box9">박스9</div>
+        <div class="box" id="box10">박스10</div>
+    </div>
+    <div class="page></div>
+
+</body>
+</html>
