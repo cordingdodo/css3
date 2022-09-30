@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css 6 - 글자/문단 모양</title>
-    <link href="https://fonts.googleapis.com/css?family=Sunflower:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <style>
        
     /*color : 컬러명 | #16코드 6자리 | #16코드 3자리 | rgb() | rgba() | hsl() | hsla()->컬러단위라부름 */ 
@@ -37,7 +37,17 @@
         font-family: "폰트1";    /*폰트이름*/
         src:url("font1.woff") /*.ttf , .otf*/
     }
-        #txt4 { word-break: kepp-all; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        #txt4 { word-break: break-all; font-family: Verdana, Geneva, Tahoma, sans-serif; font-family: 'Nanum Gorhic,' sans-serif;}
+        /*줄임말 처리: width-폭, text-overflow(글자숨김), white-space(한 줄로 표시), 
+        overflow(지정한 크기보다 내용이 많을때 숨기기/표시/스크롤바)*/
+        #txt5 { width: 500px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+        #txt6 { width: 500px; overflow: hidden; white-space: normal; display: -webkit-box; -webkit-line-clamp:2; -webkit-box-orient: vertical;}
+        #txt7 { width: 500px; overflow: hidden; white-space: normal; display: -webkit-box; -webkit-line-clamp:3;}
+    </style>
+    <style>
+        <link rel="stylesheet" href="fonts.css">
+        #txt8 { font-family: "ntg", sans-serif, font: size 80px;};
+        #txt9 {}
     </style>
 </head>
 <body>
@@ -51,9 +61,12 @@
         <p class="txt" id="txt4">문단 및 글자 모양4 - font style pararaph style font style pararaph style font 
             style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font style pararaph style font 
             style pararaph style font style pararaph style font style pararaph style</style></style></p>
-        <p class="txt" id="txt5">문단 및 글자 모양5 - </p>
-        <p class="txt" id="txt6">문단 및 글자 모양6 - </p>
-        <p class="txt" id="txt7">문단 및 글자 모양7 - </p>
+        <p class="txt" id="txt5">문단 및 글자 모양5 - font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style</p>
+ </p>
+        <p class="txt" id="txt6">문단 및 글자 모양6 - font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style</p>
+    </p>
+        <p class="txt" id="txt7">문단 및 글자 모양7 - font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style font style text style paragraph style</p>
+    </p>
         <p class="txt" id="txt8">문단 및 글자 모양8</p>
         <p class="txt" id="txt9">문단 및 글자 모양9</p>
         <p class="txt" id="txt10">문단 및 글자 모양10</p>
